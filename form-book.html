@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Form | Rinjani DedyTrekker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="container navbar-container">
+        <a href="index.html" class="navbar-logo">
+          <img src="images/logo.png" alt="Rinjani Deddytrekker Logo" />
+        </a>
+        <div class="navbar-menu">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="packet.html" class="nav-link">Packet</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+        <div class="navbar-icons">
+          <a href="#" id="search-btn"><i data-feather="search"></i></a>
+          <a href="#" id="menu-btn"><i data-feather="menu"></i></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="booking-page-header">
+      <h1>PENGISIAN DATA DIRI</h1>
+    </header>
+
+    <!-- Booking Form Section -->
+    <section class="booking-section-wrapper">
+      <div class="booking-container">
+        <h2 class="booking-title">How to Book?</h2>
+        <p class="booking-step-label">
+          1. Please fill in complete the booking form below and click Submit
+          Form
+        </p>
+        <form action="#" class="booking-form-box">
+          <div class="booking-group">
+            <label class="booking-label">Full Name* (required)</label>
+            <input type="text" class="booking-input" required />
+          </div>
+          <div class="booking-group">
+            <label class="booking-label">Nationality* (required)</label>
+            <input type="text" class="booking-input" required />
+          </div>
+          <div class="booking-group">
+            <label class="booking-label">Phone number* (required)</label>
+            <input type="tel" class="booking-input" required />
+          </div>
+          <div class="booking-group">
+            <label class="booking-label">E-mail Address* (required)</label>
+            <input type="email" class="booking-input" required />
+          </div>
+          <div class="booking-group">
+            <label class="booking-label">Type Of Service</label>
+            <select class="booking-input booking-select">
+              <option value="">Select Service</option>
+              <option value="vip">VIP Package</option>
+              <option value="vvip">VVIP Package</option>
+              <option value="standard">Standard Package</option>
+            </select>
+          </div>
+          <div class="booking-group">
+            <label class="booking-label">Number Of Participants</label>
+            <div class="booking-row">
+              <div class="booking-col-half">
+                <label class="booking-sub-label">Adults</label>
+                <select class="booking-input booking-select">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4+</option>
+                </select>
+              </div>
+              <div class="booking-col-half">
+                <label class="booking-sub-label">Kids</label>
+                <select class="booking-input booking-select">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3+</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="booking-group">
+            <label class="booking-label"
+              >Pickup Date* (one day before starting the hike)</label
+            >
+            <input type="date" class="booking-input" required />
+          </div>
+          <div class="booking-group">
+            <label class="booking-label"
+              >Pickup Location & Time *(Airport, harbor or hotel in Lombok
+              Island)</label
+            >
+            <input
+              type="text"
+              class="booking-input"
+              placeholder="Example: Lombok Airport at 10:00 AM"
+              required
+            />
+          </div>
+          <div class="booking-group">
+            <label class="booking-label">Trekking Date* (required)</label>
+            <div class="booking-row">
+              <div class="booking-col-half">
+                <label class="booking-sub-label">From</label>
+                <input type="date" class="booking-input" required />
+              </div>
+              <div class="booking-col-half">
+                <label class="booking-sub-label">To</label>
+                <input type="date" class="booking-input" required />
+              </div>
+            </div>
+          </div>
+          <div class="booking-group">
+            <label class="booking-label">Additional Information</label>
+            <textarea
+              class="booking-input booking-textarea"
+              rows="5"
+            ></textarea>
+          </div>
+          <button type="submit" class="booking-btn-submit">SUBMIT FORM</button>
+        </form>
+        <div class="booking-info-section">
+          <p class="booking-step-label">
+            2. Make sure that you send the following all members' details by
+            E-mail or whatsapp
+          </p>
+          <ul class="booking-detail-list">
+            <li>Full Name :</li>
+            <li>Passport Number :</li>
+            <li>Gender :</li>
+            <li>Birth date :</li>
+            <li>Height :</li>
+            <li>Weight :</li>
+            <li>Nationality :</li>
+          </ul>
+        </div>
+        <div class="booking-info-section">
+          <p class="booking-step-label">
+            3. Make deposit payment by click the button below.
+          </p>
+          <a href="#" class="booking-btn-block">BOOK AND PAY DEPOSIT</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer-row">
+          <div class="footer-col footer-contact">
+            <h3>Contact Us</h3>
+            <p>Welcome to our web!</p>
+            <p>Perjalanan aman dan nyaman menuju puncak Rinjani.</p>
+            <p class="contact-highlight">WA: +62 812-3456-7890</p>
+          </div>
+          <div class="footer-col footer-links">
+            <a href="about.html">About us</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          copyright @ 2026 jjah | Created by Nafis
+        </div>
+        <div class="footer-social">
+          <a href="#"><i data-feather="instagram"></i></a>
+          <a href="#"><i data-feather="facebook"></i></a>
+          <a href="#"><i data-feather="video"></i></a>
+          <a href="#"><i data-feather="mail"></i></a>
+          <a href="#"><i data-feather="message-circle"></i></a>
+          <a href="#"><i data-feather="map-pin"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
